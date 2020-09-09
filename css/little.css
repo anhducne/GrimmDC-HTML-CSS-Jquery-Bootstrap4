@@ -1,0 +1,191 @@
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.a{
+    color: #ffffff;
+}
+.clearfix{
+    overflow: auto;
+}
+.owl-theme .owl-nav.disabled + .owl-dots{
+    margin-top: -22px !important;
+    position: absolute;
+    z-index: 1;
+    margin-left: 43%;
+}
+
+.text-align-center{
+    text-align: center !important;
+}
+
+/* css con layout slide  */
+.btn-more-white {
+    display: inline-block !important;
+    padding: 7px 15px;
+    border: 1px solid;
+    color: #ffffff;
+    margin-top: 55px;
+    border-radius: 2px;
+}
+
+.text-black-grey{
+    color:  #3d3d3d !important;
+}
+.collection-title{
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    display: block;
+    text-transform: uppercase;
+}
+.collection-info{
+    position: absolute;
+    top: calc(50% - 75px);
+    right: 30px;
+    width: 40%;
+    text-align: right;
+}
+a.home-collection-link{
+    display: block  ;
+    line-height: 0 !important;
+}
+a.home-collection-link img{
+    width: 100%;
+    height: 100%;
+   
+}
+.collection-desc{
+    color: #ffffff;
+    line-height: 24px;
+}
+/* end css con layout on slide  */
+
+.home-banner1{
+    position: relative;
+}
+
+.home-gallery{
+    background: #000000;
+    padding: 50px 0px;
+}
+.hg-info{
+    text-align: center;
+}
+.hg-info .hg-title{
+    font-size: 36px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.hg-info .hg-desc{
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.home-banner2{
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+.collection-info2{
+    position: absolute;
+    right: 0px;
+    width: 100%;
+    top: auto;
+    bottom: 65px;
+}
+
+.section-title{
+    letter-spacing: 2px;
+    text-transform: uppercase !important;
+    font-family: opensans !important;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+.product-item {
+    padding: 0px 5px;
+    margin-bottom: 5px;
+}
+.product-img{
+    position: relative;
+}
+.product-sale {
+    top: 0;
+    right: 0px;
+    color: #f94c43;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 13px;
+    position: absolute;
+    background: #D95336;
+    width: 36px;
+    height: 32px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0;
+    z-index: 999;
+}
+.variant-hover{
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-title{
+    color: #000000;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 15px;
+    position: relative;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+a.variant-hover img{
+    width: 100%;
+}
+
+#home-shop-map{
+    margin-top: 30px;
+    height: 300px;
+    background-image: linear-gradient(to bottom right, white, black);;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home-shop-map .overlay .shop-info{
+    margin-top: 10%;
+}
+#home-shop-map .overlay .shop-info span {
+    display: block;
+    font-size: 28px;
+    letter-spacing: 4px;
+    color: #fff;
+}
+
+footer .footer-copyright {
+    padding: 10px 0px;
+    background: #000000;
+    color: #ffffff;
+    font-family: 'Dancing Script', cursive !important;
+}
