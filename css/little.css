@@ -1,3 +1,4 @@
+ /* tool  */
 a{
     color: #ffffff;
     text-decoration: none;
@@ -14,24 +15,46 @@ a{
     z-index: 1;
     margin-left: 43%;
 }
-
+.overlay{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
 .text-align-center{
     text-align: center !important;
 }
-
+.mr-10{
+    margin-right: 10px
+}
+.mb-15{
+    margin-bottom: 15px;
+}
+.text-18px{
+    font-size: 18px;
+}
+.text-black{
+    color: black;
+}
+.text-black-grey{
+    color:  #3d3d3d !important;
+}
+h3{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
 /* css con layout slide  */
 .btn-more-white {
     display: inline-block !important;
     padding: 7px 15px;
     border: 1px solid;
     color: #ffffff;
-    margin-top: 55px;
+    margin-top: 25px;
     border-radius: 2px;
 }
 
-.text-black-grey{
-    color:  #3d3d3d !important;
-}
 .collection-title{
     font-size: 36px;
     color: #ffffff;
@@ -91,14 +114,6 @@ a.home-collection-link img{
     position: relative;
 }
 
-.overlay{
-    position: absolute;
-    top: 0px;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
-}
 .collection-info2{
     position: absolute;
     right: 0px;
@@ -153,7 +168,6 @@ a.home-collection-link img{
     text-align: center;
     margin-bottom: 15px;
     position: relative;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
 a.variant-hover img{
@@ -174,7 +188,8 @@ a.variant-hover img{
     justify-content: center;
 }
 #home-shop-map .overlay .shop-info{
-    margin-top: 10%;
+    margin-top: 8%;
+    text-transform: uppercase;
 }
 #home-shop-map .overlay .shop-info span {
     display: block;
@@ -188,4 +203,70 @@ footer .footer-copyright {
     background: #000000;
     color: #ffffff;
     font-family: 'Dancing Script', cursive !important;
+}
+/* footer main class control  */
+.footer-info-left{
+    width: 70%;
+    float: left;
+}
+.footer-social-right{
+    width: 30%;
+    float: left;
+}
+/* footer info left control */
+
+.footer-info-left .grid-item-left{
+    width: 33.333%;
+    float: left;
+}
+.footer-info-left .grid-item-left .footer-info .footer-info-logo{
+    margin-bottom: 30px;
+}
+.footer-info-left .grid-item-left .footer-info .footer-info-logo a img{
+    height: 100px;
+}
+.ft-address{
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 17%;
+}
+.ft-hotline{
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 17%;
+}
+.ft-email{
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 17%;
+}
+
+
+.footer-info-left .grid-item-center{
+    width: 33.333%;
+    float: left;
+}
+.footer-info-left .grid-item-center .footer-menu{
+    padding: 5% 34%;
+}
+.footer-info-left .grid-item-right .footer-menu{
+    padding: 5% 18%;
+}
+
+.footer-info-left .grid-item-right{
+    width: 33.333%;
+    float: left;
+}
+.footer-social{
+    height: 100%;
+    padding-top: 8.5%;
+}
+
+.social-icon{
+    color: #000000;
+    font-size: 36px;
+    margin-right: 10px;
+}
+.footer-title{
+    margin-bottom: 30px;
 }
