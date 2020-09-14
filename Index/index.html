@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/for-index/index.css">
     <link rel="stylesheet" href="css/for-index/little.css">
     <link rel="stylesheet" href="css/for-index/form-modal-regis.css">
+    <link rel="stylesheet" href="css/for-index/modal-product.css">
+    <link rel="stylesheet" href="css/for-index/modal-search.css">
     <link rel="stylesheet" href="css/for-index/owl/owl.carousel.css">
     <link rel="stylesheet" href="css/for-index/owl/owl.theme.default.css">
     <link rel="stylesheet" href="css/for-index/responsive.css">
@@ -26,14 +28,14 @@
                             <i id="icon-menu" class="fa fa-navicon"></i>
                         </a>
                     </div>
-                           <!-- menu respond  -->
+                    <!-- menu respond  -->
                     <div id="respon_menu" class="">
                         <div class="drawer__header">
                             <div class="drawer__title"><img src="img/logo.webp" alt="Grimm DC"></div>
                             <div class="drawer__close js-drawer-close" id="icon-close">
                                 <a href="" class="fa fa-times close-icon"></a>
                             </div>
-                        </div>  
+                        </div>
                         <ul class="mobile-nav">
                             <li class="mobile-nav__item mobile-nav__item--active">
                                 <a href="/" class="mobile-nav__link">Grimm DC</a>
@@ -56,19 +58,19 @@
                             <li class="mobile-nav__item">
                                 <a href="/account/register" id="customer_register_link">Đăng kí</a>
                             </li>
-                        </ul> 
-                  </div> 
-                            <!-- end menu respond  -->
-                            <!-- logo web khi không respond  -->
+                        </ul>
+                    </div>
+                    <!-- end menu respond  -->
+                    <!-- logo web khi không respond  -->
                     <a href=""><img src="img/logo.webp" alt=""></a>
-                            <!-- end logo web khi không respond  -->
-                            <!-- mobllie shopping bag when respond  -->
+                    <!-- end logo web khi không respond  -->
+                    <!-- mobllie shopping bag when respond  -->
                     <div class="mobile-bag-shopping">
                         <a href="" class="hd-cart">
                             <i class="fa fa-shopping-bag" aria-hidden="true"></i>
                         </a>
                     </div>
-                                
+
                 </div>
                 <div class="item-list-center">
                     <div class="list-control">
@@ -80,7 +82,53 @@
                                 <a href="" class="menu-link a">GIỚI THIỆU</a>
                             </li>
                             <li class="menu-item">
-                                <a href="" class="menu-link a">SẢN PHẨM🔽</a>
+                                <a href="" class="menu-link a btn-2">SẢN PHẨM🔽</a>
+                                <!-- modal của popup list product  -->
+                                <div class="modal-2">
+                                    <div class="modal-content-2">
+                                        <div class="modal-content-list clearfix">
+                                            <div class="modal-content-list-left">
+                                                <ul class="list-modal2">
+                                                    <li>
+                                                        <h2>Áo</h2>
+                                                    </li>
+                                                    <li><a href="">Áo Tay ngắn</a></li>
+                                                    <li><a href="">Áo Tay dài</a></li>
+                                                    <li><a href="">Áo croptop</a></li>
+                                                    <li><a href="">Áo Hoodie</a></li>
+                                                    <li><a href="">Áo Jacket</a></li>
+                                                    <li><a href="">Áo Sơ mi</a></li>
+                                                    <li><a href="">Áo Flannel</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="modal-content-list-center">
+                                                <ul class="list-modal2">
+                                                    <li>
+                                                        <h2>Quần</h2>
+                                                    </li>
+                                                    <li><a href="">Quần Short</a></li>
+                                                    <li><a href="">Quần Dài</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="modal-content-list-right">
+                                                <ul class="list-modal2">
+                                                    <li>
+                                                        <h2>Phụ Kiện</h2>
+                                                    </li>
+                                                    <li><a href="">Túi đeo chéo</a></li>
+                                                    <li><a href="">Túi Tote</a></li>
+                                                    <li><a href="">Nón thêu</a></li>
+                                                    <li><a href="">Nón Charm</a></li>
+                                                    <li><a href="">Vớ</a></li>
+                                                    <li><a href="">Keychain</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="modal-content-list-img">
+                                                <img src="img/modal-product4.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                             <li class="menu-item">
                                 <a href="" class="menu-link a">TIN TỨC</a>
@@ -95,31 +143,54 @@
                     <div class="right-contact-control">
                         <ul class="contact-control">
                             <li class="contact-item">
-                                <a href="" class="open-search a"><i class="fa fa-search"></i></a>
+                                <a href="" class="open-search a btn-3"><i class="fa fa-search"></i></a>
+                                <div class="modal-3">
+                                    <div class="modal-content-3">
+                                        <form id="searchauto" action="/search" class="searchform-categoris ultimate-search" style="display: block;">
+                                            <div class="wpo-search">
+                                                <div class="wpo-search-inner">
+                                                    <div class="input-group">
+                                                        <input type="hidden" name="type" value="product">
+                                                        <input id="searchtext" name="q" maxlength="40"
+                                                            class="form-control input-search" type="text" size="20"
+                                                            placeholder="Tìm kiếm" autocomplete="off">
+                                                        <span class="input-group-addon">
+                                                            <input type="submit" id="searchsubmit" class="fa" value="">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <input type="hidden" class="collection_id"
+                                                    value="(collectionid:product>=0)">
+                                                <input type="hidden" class="collection_handle" value="all">
+                                                <input type="hidden" class="collection_name" value="all">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </li>
                             <li class="contact-item">
                                 <a href="" class="a btn"><i class="fa fa-user"></i></a>
-                                  <!-- modal popup để cho người dùng đăng nhập  -->
-                                  <div class="modal">
+                                <!-- modal popup để cho người dùng đăng nhập  -->
+                                <div class="modal">
                                     <div class="modal-content">
-                                      <!-- <span class="close">&times;</span> -->
+                                        <!-- <span class="close">&times;</span> -->
                                         <div class="form-reg">
                                             <div class="loginbox">
-                                                    <h1>Login Here</h1>
-                                                    <form>
-                                                        <p>Username</p>
-                                                        <input type="text" name="" placeholder="Enter Username">
-                                                        <p>Password</p>
-                                                        <input type="password" name="" placeholder="Enter Password">
-                                                        <input type="submit" name="" value="Login">
-                                                        <a href="#">Lost your password?</a><br>
-                                                        <a href="../Registration/Registration.html">Don't have an account?</a>
-                                                    </form>
-                                                 
-                                                </div>
+                                                <h1>Đăng Nhập</h1>
+                                                <form>
+                                                    <p>Tên đăng nhập</p>
+                                                    <input type="text" name="" placeholder="Tên đăng nhập">
+                                                    <p>Mật khẩu</p>
+                                                    <input type="password" name="" placeholder="Mật khẩu">
+                                                    <input type="submit" name="" value="Đăng Nhập">
+                                                    <a href="#">Quên mật khẩu ?</a><br>
+                                                    <a href="../Registration/Registration.html">Không có tài khoản ?</a>
+                                                </form>
+
+                                            </div>
                                         </div>
                                     </div>
-                                   </div>
+                                </div>
                             </li>
                             <li class="contact-item">
                                 <a href="" class="open-qv-cart a"><i class="fa fa-shopping-bag"></i>
@@ -138,7 +209,8 @@
                 <div class="item active"><img src="img/slide/slideshow_1.webp" alt="">
                     <div class="collection-info">
                         <a href="" class="collection-title text-36px ">BST FAM cap - nón Người một nhà</a>
-                        <div class="collection-desc text-13px">Bộ sưu tập nón sử dụng công nghệ khử mùi cung cấp bởi tập đoàn
+                        <div class="collection-desc text-13px">Bộ sưu tập nón sử dụng công nghệ khử mùi cung cấp bởi tập
+                            đoàn
                             Shindo - Nhật Bản. Được làm ra cho niềm đam mê trượt ván /skateboarding/. Với 4 phối màu
                             tượng trưng cho tình anh em trong một tập thể - một gia đình.</div>
                         <a href="" class="btn-more-white">Xem thêm</a>
@@ -149,7 +221,8 @@
                     <div class="collection-info">
                         <a href="" class="collection-title text-36px">BST K’Ho – nền văn hoá lụi tàn giữa đại ngàn Tây
                             Nguyên.</a>
-                        <div class="collection-desc text-13px">Với những điểm đặc biệt như đường may nối linking, ba lớp chất liệu
+                        <div class="collection-desc text-13px">Với những điểm đặc biệt như đường may nối linking, ba lớp
+                            chất liệu
                             khác nhau, toàn bộ sợi tạo nên được cung cấp bởi công ty RSWM Limited.</div>
                         <a href="" class="btn-more-white">Xem thêm</a>
                     </div>
@@ -157,7 +230,8 @@
                 <div class="item"><img src="img/slide/slideshow_3.webp" alt="">
                     <div class="collection-info">
                         <a href="" class="collection-title text-36px">Vớ Iron flame</a>
-                        <div class="collection-desc text-13px">Với những điểm đặc biệt như đường may nối linking, ba lớp chất liệu
+                        <div class="collection-desc text-13px">Với những điểm đặc biệt như đường may nối linking, ba lớp
+                            chất liệu
                             khác nhau, toàn bộ sợi tạo nên được cung cấp bởi công ty RSWM Limited. </div>
                         <a href="" class="btn-more-white">Xem thêm</a>
                     </div>
@@ -165,7 +239,8 @@
                 <div class="item"><img src="img/slide/slideshow_4.webp" alt="">
                     <div class="collection-info">
                         <a href="" class="collection-title text-36px">BST Con rồng cháu tiên</a>
-                        <div class="collection-desc text-13px">Đây là bộ sưu tập chúng tôi làm vì niềm tự hào của bản thân mình -
+                        <div class="collection-desc text-13px">Đây là bộ sưu tập chúng tôi làm vì niềm tự hào của bản
+                            thân mình -
                             của con cháu Rồng - Tiên. Vì niềm tự hào được mang trên mình dòng máu nóng của cha ông đất
                             Việt. Chúng tôi làm ra nó vì muốn được cùng tất cả anh em trên đất nước này khoác lên mình
                             cái cội nguồn chính xác của dân tộc.</div>
@@ -175,7 +250,8 @@
                 <div class="item"><img src="img/slide/slideshow_5.webp" alt="">
                     <div class="collection-info">
                         <a href="" class="collection-title text-black-grey text-36px">Urban Jungle pants</a>
-                        <div class="collection-desc text-black-grey text-13px">Mẫu quần đi rừng thế hệ thứ 2, thừa hưởng tất cả
+                        <div class="collection-desc text-black-grey text-13px">Mẫu quần đi rừng thế hệ thứ 2, thừa hưởng
+                            tất cả
                             đặc tính kỹ thuật
                             của nguyên bản, cùng những cải tiến đặc biệt. Một sự kết hợp hình ảnh cùng Biti’s Hunter.
                         </div>
@@ -206,7 +282,8 @@
         <div class=" home-gallery-inner">
             <div class="hg-info">
                 <h2 class="hg-title a text-36px">IRON FLAME</h2>
-                <div class="hg-desc a text-20px">Câu chuyện về nguồn gốc của mẫu hoạ tiết Iron Flame – Đại Định Sơn Hà</div>
+                <div class="hg-desc a text-20px">Câu chuyện về nguồn gốc của mẫu hoạ tiết Iron Flame – Đại Định Sơn Hà
+                </div>
             </div>
             <div class="hg-content">
                 <div class="hg-content-video text-align-center">
@@ -247,17 +324,16 @@
                     <div class="product-item">
                         <div class="product-img">
                             <div class="product-sale text-13px">
-                                <span>-23%</span>
+                                <span>-15%</span>
                             </div>
                             <a href="" class="variant-hover"><img src="img/product/produc1.1.webp" alt=""></a>
                         </div>
                         <div class="product-info text-align-center">
-                            <a href="/products/12-con-giap-chuot" class="product-title text-black-grey">12 con giáp |
-                                chuột</a> <br>
+                            <a href="/products/12-con-giap-chuot" class="product-title text-black-grey">Áo Lion in Jungle</a> <br>
                             <span class="product-price">
-                                <span class="current-price">270,000₫</span>
+                                <span class="current-price">670,000₫</span>
 
-                                <s class="original-price"><i>350,000₫</i></s>
+                                <s class="original-price"><i>850,000₫</i></s>
                             </span>
                         </div>
                     </div>
@@ -266,17 +342,16 @@
                     <div class="product-item">
                         <div class="product-img">
                             <div class="product-sale text-13px">
-                                <span>-23%</span>
+                                <span>-20%</span>
                             </div>
                             <a href="" class="variant-hover"><img src="img/product/produc2.1.webp" alt=""></a>
                         </div>
                         <div class="product-info text-align-center">
-                            <a href="/products/12-con-giap-chuot" class="product-title text-black-grey">12 con giáp |
-                                chuột</a> <br>
+                            <a href="/products/12-con-giap-chuot" class="product-title text-black-grey">Áo Billad Type A</a> <br>
                             <span class="product-price">
-                                <span class="current-price">270,000₫</span>
+                                <span class="current-price">210,000₫</span>
 
-                                <s class="original-price"><i>350,000₫</i></s>
+                                <s class="original-price"><i>440,000₫</i></s>
                             </span>
                         </div>
                     </div>
@@ -285,17 +360,16 @@
                     <div class="product-item">
                         <div class="product-img">
                             <div class="product-sale text-13px">
-                                <span>-23%</span>
+                                <span>-47%</span>
                             </div>
                             <a href="" class="variant-hover"><img src="img/product/produc3.1.webp" alt=""></a>
                         </div>
                         <div class="product-info text-align-center">
-                            <a href="/products/12-con-giap-chuot" class="product-title text-black-grey">12 con giáp |
-                                chuột</a> <br>
+                            <a href="/products/12-con-giap-chuot" class="product-title text-black-grey">Sơ-mi Vitamin Sea</a> <br>
                             <span class="product-price">
-                                <span class="current-price">270,000₫</span>
+                                <span class="current-price">650,000₫</span>
 
-                                <s class="original-price"><i>350,000₫</i></s>
+                                <s class="original-price"><i>950,000₫</i></s>
                             </span>
                         </div>
                     </div>
@@ -304,17 +378,16 @@
                     <div class="product-item">
                         <div class="product-img">
                             <div class="product-sale text-13px">
-                                <span>-23%</span>
+                                <span>-18%</span>
                             </div>
                             <a href="" class="variant-hover"><img src="img/product/produc4.1.webp" alt=""></a>
                         </div>
                         <div class="product-info text-align-center">
-                            <a href="/products/12-con-giap-chuot" class="product-title text-black-grey">12 con giáp |
-                                chuột</a> <br>
+                            <a href="/products/12-con-giap-chuot" class="product-title text-black-grey">Áo len MARVEL</a> <br>
                             <span class="product-price">
-                                <span class="current-price">270,000₫</span>
+                                <span class="current-price">550,000₫</span>
 
-                                <s class="original-price"><i>350,000₫</i></s>
+                                <s class="original-price"><i>1.150,000₫</i></s>
                             </span>
                         </div>
                     </div>
@@ -323,17 +396,16 @@
                     <div class="product-item">
                         <div class="product-img">
                             <div class="product-sale text-13px">
-                                <span>-23%</span>
+                                <span>-67%</span>
                             </div>
                             <a href="" class="variant-hover"><img src="img/product/produc5.1.webp" alt=""></a>
                         </div>
                         <div class="product-info text-align-center">
-                            <a href="/products/12-con-giap-chuot" class="product-title text-black-grey">12 con giáp |
-                                chuột</a> <br>
+                            <a href="/products/12-con-giap-chuot" class="product-title text-black-grey">Áo G Pink</a> <br>
                             <span class="product-price">
-                                <span class="current-price">270,000₫</span>
+                                <span class="current-price">300,000₫</span>
 
-                                <s class="original-price"><i>350,000₫</i></s>
+                                <s class="original-price"><i>650,000₫</i></s>
                             </span>
                         </div>
                     </div>
@@ -342,17 +414,16 @@
                     <div class="product-item">
                         <div class="product-img">
                             <div class="product-sale text-13px">
-                                <span>-23%</span>
+                                <span>-74%</span>
                             </div>
                             <a href="" class="variant-hover"><img src="img/product/produc6.1.webp" alt=""></a>
                         </div>
                         <div class="product-info text-align-center">
-                            <a href="/products/12-con-giap-chuot" class="product-title text-black-grey">12 con giáp |
-                                chuột</a> <br>
+                            <a href="/products/12-con-giap-chuot" class="product-title text-black-grey">Áo Grimm DC White</a> <br>
                             <span class="product-price">
-                                <span class="current-price">270,000₫</span>
+                                <span class="current-price">440,000₫</span>
 
-                                <s class="original-price"><i>350,000₫</i></s>
+                                <s class="original-price"><i>500,000₫</i></s>
                             </span>
                         </div>
                     </div>
@@ -361,17 +432,16 @@
                     <div class="product-item">
                         <div class="product-img">
                             <div class="product-sale text-13px">
-                                <span>-23%</span>
+                                <span>-11%</span>
                             </div>
                             <a href="" class="variant-hover"><img src="img/product/produc7.1.webp" alt=""></a>
                         </div>
                         <div class="product-info text-align-center">
-                            <a href="/products/12-con-giap-chuot" class="product-title text-black-grey">12 con giáp |
-                                chuột</a> <br>
+                            <a href="/products/12-con-giap-chuot" class="product-title text-black-grey">Quần đũi đen</a> <br>
                             <span class="product-price">
-                                <span class="current-price">270,000₫</span>
+                                <span class="current-price">200,000₫</span>
 
-                                <s class="original-price"><i>350,000₫</i></s>
+                                <s class="original-price"><i>345,000₫</i></s>
                             </span>
                         </div>
                     </div>
@@ -380,17 +450,16 @@
                     <div class="product-item">
                         <div class="product-img">
                             <div class="product-sale text-13px">
-                                <span>-23%</span>
+                                <span>-29%</span>
                             </div>
                             <a href="" class="variant-hover"><img src="img/product/produc8.1.webp" alt=""></a>
                         </div>
                         <div class="product-info text-align-center">
-                            <a href="/products/12-con-giap-chuot" class="product-title text-black-grey">12 con giáp |
-                                chuột</a> <br>
+                            <a href="/products/12-con-giap-chuot" class="product-title text-black-grey">Sơ-mi Caro</a> <br>
                             <span class="product-price">
-                                <span class="current-price">270,000₫</span>
+                                <span class="current-price">670,000₫</span>
 
-                                <s class="original-price"><i>350,000₫</i></s>
+                                <s class="original-price"><i>850,000₫</i></s>
                             </span>
                         </div>
                     </div>
@@ -399,17 +468,16 @@
                     <div class="product-item">
                         <div class="product-img">
                             <div class="product-sale text-13px">
-                                <span>-23%</span>
+                                <span>-33%</span>
                             </div>
                             <a href="" class="variant-hover"><img src="img/product/produc9.1.webp" alt=""></a>
                         </div>
                         <div class="product-info text-align-center">
-                            <a href="/products/12-con-giap-chuot" class="product-title text-black-grey">12 con giáp |
-                                chuột</a> <br>
+                            <a href="/products/12-con-giap-chuot" class="product-title text-black-grey">Áo giữ nhiệt dài tay</a> <br>
                             <span class="product-price">
-                                <span class="current-price">270,000₫</span>
+                                <span class="current-price">470,000₫</span>
 
-                                <s class="original-price"><i>350,000₫</i></s>
+                                <s class="original-price"><i>550,000₫</i></s>
                             </span>
                         </div>
                     </div>
@@ -517,19 +585,22 @@
                             CHÚNG TÔI TRÊN MẠNG XÃ HỘI
                         </h4>
                         <div class="list-social-network">
-						
-                            <a href="https://www.facebook.com/grimmdcvietnam/" class="social-icon"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            
-                            
-                            <a href="https://www.instagram.com/grimmdc.official/" class="social-icon"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                            
-                            
-                            <a href="https://www.youtube.com/channel/UCkuQ9XY5PEDQmGYX9ceIexg" class="social-icon"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                        </div>
+
+                            <a href="https://www.facebook.com/grimmdcvietnam/" class="social-icon"><i
+                                    class="fa fa-facebook" aria-hidden="true"></i></a>
+
+
+                            <a href="https://www.instagram.com/grimmdc.official/" class="social-icon"><i
+                                    class="fa fa-instagram" aria-hidden="true"></i></a>
+
+
+                            <a href="https://www.youtube.com/channel/UCkuQ9XY5PEDQmGYX9ceIexg" class="social-icon"><i
+                                    class="fa fa-youtube-play" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
         <div class="footer-copyright text-align-center">
             <a target="_blank" href="http://grimmdc.vn">© 2020 TEAM 28 THIS IS NOT FOR COPY RIGHT</a>
@@ -546,7 +617,7 @@
         loop: true,
         margin: 10,
         autoplay: true,
-        autoplayTimeout: 1000,
+        autoplayTimeout: 1500,
         autoplayHoverPause: true,
     });
     $('#works-carousel').owlCarousel({
@@ -555,7 +626,7 @@
         margin: 10,
         dots: false,
         autoplay: true,
-        autoplayTimeout: 900,
+        autoplayTimeout: 1500,
         autoplayHoverPause: true,
     });
 </script>
