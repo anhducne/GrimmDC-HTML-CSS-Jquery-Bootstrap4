@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/for-index/reset.css">
     <link rel="stylesheet" href="css/for-index/index.css">
     <link rel="stylesheet" href="css/for-index/little.css">
+    <link rel="stylesheet" href="css/for-index/form-modal-regis.css">
     <link rel="stylesheet" href="css/for-index/owl/owl.carousel.css">
     <link rel="stylesheet" href="css/for-index/owl/owl.theme.default.css">
     <link rel="stylesheet" href="css/for-index/responsive.css">
@@ -61,7 +62,7 @@
                             <!-- logo web khi không respond  -->
                     <a href=""><img src="img/logo.webp" alt=""></a>
                             <!-- end logo web khi không respond  -->
-
+                            <!-- mobllie shopping bag when respond  -->
                     <div class="mobile-bag-shopping">
                         <a href="" class="hd-cart">
                             <i class="fa fa-shopping-bag" aria-hidden="true"></i>
@@ -97,7 +98,28 @@
                                 <a href="" class="open-search a"><i class="fa fa-search"></i></a>
                             </li>
                             <li class="contact-item">
-                                <a href="" class=" a"><i class="fa fa-user"></i></a>
+                                <a href="" class="a btn"><i class="fa fa-user"></i></a>
+                                  <!-- modal popup để cho người dùng đăng nhập  -->
+                                  <div class="modal">
+                                    <div class="modal-content">
+                                      <!-- <span class="close">&times;</span> -->
+                                        <div class="form-reg">
+                                            <div class="loginbox">
+                                                    <h1>Login Here</h1>
+                                                    <form>
+                                                        <p>Username</p>
+                                                        <input type="text" name="" placeholder="Enter Username">
+                                                        <p>Password</p>
+                                                        <input type="password" name="" placeholder="Enter Password">
+                                                        <input type="submit" name="" value="Login">
+                                                        <a href="#">Lost your password?</a><br>
+                                                        <a href="#">Don't have an account?</a>
+                                                    </form>
+                                                 
+                                                </div>
+                                        </div>
+                                    </div>
+                                   </div>
                             </li>
                             <li class="contact-item">
                                 <a href="" class="open-qv-cart a"><i class="fa fa-shopping-bag"></i>
@@ -109,6 +131,7 @@
             </div>
         </div>
     </div>
+    <!-- end header  -->
     <div id="home-main-slider">
         <div id="slider ">
             <div id="team-carousel" class="owl-carousel owl-theme">

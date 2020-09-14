@@ -38,3 +38,24 @@ $(window).resize(function(){    // chỉ vào cái màn hình chúng ta dùng th
    return false;
  });
 });
+   // js modal 
+$(document).ready(function () {
+   var modal = $('.modal');
+   var btn = $('.btn');
+   var span = $('.close');
+ 
+   btn.click(function () {
+     modal.show();
+     return false;
+   });
+ 
+   span.click(function () {
+     modal.hide();
+   });
+ 
+   $(window).on('click', function (e) {
+     if ($(e.target).is('.modal')) {
+       modal.hide();
+     }
+   });
+ });
