@@ -19,7 +19,7 @@ body{
     left:0;
     right:0;
     bottom:0;
-    background-color:rgba(0, 0, 0, 0.22);
+    background-color:rgba(0, 0, 0, 0.50);
     z-index:9999;
    width: 100%;
    height: 650px;
@@ -47,8 +47,14 @@ body{
 }
 .input-group-prepend span{
     background-color: transparent !important;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
 }
 form .input-group input{
     background-color: transparent !important; 
-    /* phải có imporrt tan nếu ko thì click vào nó sẽ bị khoảng trắng  */
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+     /* phải có imporrt tan nếu ko thì click vào nó sẽ bị khoảng trắng  */
 }
