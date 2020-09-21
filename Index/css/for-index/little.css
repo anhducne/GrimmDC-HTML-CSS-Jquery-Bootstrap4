@@ -23,6 +23,14 @@ a{
     bottom: 0;
     background: rgba(0, 0, 0, 0.3);
 }
+.overlay2{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
 .text-align-center{
     text-align: center !important;
 }
@@ -32,6 +40,19 @@ a{
 .mb-15{
     margin-bottom: 15px;
 }
+.pt-0{
+    padding-top: 0px !important;
+}
+.pt-15{
+    padding-top: 15px;
+}
+.pt-50{
+     padding-top: 50px !important;
+}
+.pb-50{
+    padding-bottom: 50px;
+}
+
 /* quy định về kích thước  */
 .text-13px{
     font-size: 13px;
@@ -46,7 +67,7 @@ a{
     font-size: 28px;
 }
 .text-36px{
-    font-size: 36px;
+    font-size: 36px !important;
 }
 /* kết thúc quy định về kích thước  */
 .text-black{
@@ -55,9 +76,18 @@ a{
 .text-black-grey{
     color:  #3d3d3d !important;
 }
+.red{
+    color: red;
+}
 h3{
     margin-top: 20px;
     margin-bottom: 25px;
+}
+.text-uppcase{
+    text-transform: uppercase;
+}
+.text-bold{
+    font-weight: bold;
 }
 /* css con layout slide  */
 .btn-more-white {
@@ -67,11 +97,17 @@ h3{
     color: #ffffff;
     margin-top: 25px;
     border-radius: 2px;
+    transition: 0.5s;
 }
-
+.btn-more-white:hover {
+    background-color: black;
+    color: white !important;
+    border: 1px solid red;
+    transition: 0.5s;
+}
 .collection-title{
     color: #ffffff;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     display: block;
     text-transform: uppercase;
 }
@@ -129,23 +165,33 @@ a.home-collection-link img{
     position: absolute;
     right: 0px;
     width: 100%;
-    top: auto;
-    bottom: 65px;
+    top: 51% ;
+    bottom: auto;
 }
 /* css của phần slider 2  */
 .section-title{
     letter-spacing: 2px;
     text-transform: uppercase !important;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 400;
 
 }
-
+.owl-item .item{
+    
+}
 .product-item {
     margin-bottom: 5px;
-    border: 1px solid #001f3f;
+    border: 0.05px solid white;
+    transform: scale(1);
+    transition: 0.8s;
 }
+.product-item:hover{
+    border: 0.05px solid red;
+    transform: scale(0.95);
+    transition: 0.8s;
+}
+
 .product-img{
     position: relative;
 }
@@ -157,7 +203,7 @@ a.home-collection-link img{
     justify-content: center;
     display: flex;
     position: absolute;
-    background: #001f3f;
+    background: red;
     width: 36px;
     height: 32px;
     color: #fff;
@@ -173,28 +219,55 @@ a.home-collection-link img{
 }
 
 .product-title{
-    color: #000000;
+    color: whitesmoke;
     display: inline-block;
     text-align: center;
     margin-bottom: 15px;
     position: relative;
-    font-weight: bold;
+    font-weight: 400;
 }
 .product-info{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-a.variant-hover img{
+
+a.variant-hover img.active-slide-img{
     width: 100%;
-    border-bottom: 1px solid #001f3f;
+    position: relative;
+}
+a.variant-hover img.hover-slide-img{
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    transition: 0.8s;
 }
 
+.product-item:hover .product-img a.variant-hover img.hover-slide-img{
+   opacity: 1;
+   z-index: 1;
+   transition: 0.8s;
+}
 
-
+#new-arrivals-slider{
+    background-color: black;
+}
+#new-arrivals-slider div a.btn-more-white{
+    color: white !important;
+    background-color: black;
+    border: 1px solid white;
+}
+#new-arrivals-slider div a.btn-more-white:hover{
+    color: black !important;
+    background-color: whitesmoke;
+    border: 1px solid white;
+}
+/* home shop map css  */
 #home-shop-map{
-    margin-top: 30px;
     height: 300px;
-    background-image: linear-gradient(to bottom right, grey, black);;
+    background-image:url("https://scontent.fhan2-4.fna.fbcdn.net/v/t1.0-9/91374393_2745733178829621_8700508370416697344_o.jpg?_nc_cat=105&_nc_sid=e3f864&_nc_ohc=PrKaEULLLgMAX-iRyxd&_nc_ht=scontent.fhan2-4.fna&oh=e4210a746833203f1d37234729cdfe3e&oe=5F895ABB");
+    /* background-image: linear-gradient(to bottom right, grey, black); */
     background-attachment: fixed;
     background-position: top;
     background-repeat: no-repeat;
@@ -204,6 +277,7 @@ a.variant-hover img{
     align-items: center;
     justify-content: center;
 }
+
 #home-shop-map .overlay .shop-info{
     margin-top: 8%;
     text-transform: uppercase;
@@ -221,6 +295,9 @@ footer .footer-copyright {
     color: #ffffff;
 }
 /* footer main class control  */
+.footer-main{
+    box-shadow: -2px -20px 18px 4px grey;
+}
 .footer-info-left{
     width: 70%;
     float: left;
@@ -270,6 +347,14 @@ footer .footer-copyright {
     margin-top: 5%;
     margin-left: 18%;
 }
+.footer-menu .footer-nav-list li a{
+    transition: 0.2s;
+}
+.footer-menu .footer-nav-list li:hover a{
+    transition: 0.2s;
+    color: red;
+    font-weight: bold;
+}
 
 .footer-info-left .grid-item-right{
     width: 33.333%;
@@ -287,4 +372,14 @@ footer .footer-copyright {
 }
 .footer-title{
     margin-bottom: 30px;
+}
+
+.list-social-network a{
+    transform: scale(1);
+    transition: 0.6s;
+}
+.list-social-network a:hover i{
+    transform: scale(1.5);
+    color: red;
+    transition: 0.6s;
 }

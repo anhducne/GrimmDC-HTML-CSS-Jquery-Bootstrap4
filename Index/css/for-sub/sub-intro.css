@@ -1,0 +1,27 @@
+#header{
+    min-height: 72px;
+}
+
+#body-intro{
+    background-color:black;
+    min-height: 100%;
+}
+#body-intro .intro-content{
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2%;
+    padding-bottom: 8%;
+    color:#dedede;
+}
+
+#body-intro .intro-content .intro-text p{
+    margin-top: 5%;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #dedede;
+}
+
+.intro-img img{
+    width: 100%;
+    height: auto;
+}
