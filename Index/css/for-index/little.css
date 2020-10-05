@@ -31,11 +31,17 @@ a{
     bottom: 0;
     background: rgba(0, 0, 0, 0.6);
 }
+.display-none{
+    display: none !important;
+}
 .text-align-center{
     text-align: center !important;
 }
 .mr-10{
     margin-right: 10px
+}
+.ml-10{
+    margin-left: 10px
 }
 .mb-15{
     margin-bottom: 15px;
@@ -78,6 +84,9 @@ a{
 }
 .red{
     color: red;
+}
+.blue-camo{
+    color: #23527c;
 }
 h3{
     margin-top: 20px;
@@ -177,9 +186,7 @@ a.home-collection-link img{
     font-weight: 400;
 
 }
-.owl-item .item{
-    
-}
+
 .product-item {
     margin-bottom: 5px;
     border: 0.05px solid white;

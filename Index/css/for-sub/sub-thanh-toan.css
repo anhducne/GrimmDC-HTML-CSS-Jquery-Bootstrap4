@@ -1,0 +1,113 @@
+a{
+    text-decoration: none;
+    color: #338dbc;
+    display: inline-block;
+}
+#content{
+    padding-bottom:  5% !important;
+}
+.pay-control{
+    display: flex;
+    padding-top: 4em;
+}
+.pay-left{
+    width: 45%;
+    margin-left: 5%;
+}
+.pay-right{
+    width: 75%;
+}
+ul.breadcrumb{
+    margin-top: 1em;
+}
+ul.breadcrumb li.breadcrumb-item{
+    display: inline-block;
+    font-size: 0.85714em;
+    color: #999999;
+}
+    
+ul.breadcrumb li.breadcrumb-item::after{
+    content: ">";
+    color: white;
+    display: inline-block;
+    width: 6px;
+    height: 11px;
+    margin: 0 0.5em;
+}
+
+ul.breadcrumb li.breadcrumb-item:last-child:after{
+    display: none;
+}
+.left-content-control{
+    padding-bottom: 8%;
+    border-bottom: 1px solid grey;
+    width: 100%;
+}
+.left-content-control .fieldset{
+        height: 100%;
+}
+.left-content-control .fieldset .field {
+    width: 100%;
+    float: left;
+    padding: 0.45em;
+    box-sizing: border-box;
+}
+
+.field-input-wrapper{}
+.field-input-wrapper .field-label{
+    position: absolute;
+    opacity: 0;
+    color: #999999;
+    transition: all 0.2s ease-out;
+    margin: 0.5em 0;
+    margin-top: 0.3em;
+    display: block;
+}
+.field-input-wrapper .field-input{
+    box-shadow: 3px 2px 0px 0px #338dbc;
+    transition: all 0.2s ease-out;
+    background-color: white;
+    color: #333333;
+    border-radius: 4px;
+    width: 88%;
+    padding: 0.94em 2.8em 0.94em 0.8em;
+    word-break: normal;
+    margin: 10px 0px 10px 0px;
+}
+
+.next_step{
+    text-align: right;
+    margin-right: 1%;
+}
+.continue-btn{
+    display: inline-block;
+    border-radius: 4px;
+    font-weight: 500;
+    padding: 1.4em 1.7em;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    position: relative;
+    background: #338dbc;
+    color: white;
+}
+
+.order-table-80 {
+    width: 90% !important;
+    margin: 0 auto;
+}
+.th{
+    width: 25%;
+    padding-left: 35px !important;
+}
+
+tr.thead-dark {
+    border-top: none !important;
+}
+table {
+    margin-top: 0 !important;
+}
+tbody tr {
+    border-top: 0.5px solid grey !important;
+}
