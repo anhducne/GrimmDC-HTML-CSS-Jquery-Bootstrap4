@@ -1,0 +1,24 @@
+body{
+    font-family: segoe ui;
+}
+
+.table-control{
+    float: left;
+    width: 100%;
+}
+td.button-w{
+    width: 14%;
+}
+/* style for tab 2  */
+td.avatar{
+    width: 10%;
+}
+img.avatar-img{
+    width: 100%;
+}
+
+.form-add-here form .input-group{
+    display: inline-flex;
+    width: 20%;
+}
+
