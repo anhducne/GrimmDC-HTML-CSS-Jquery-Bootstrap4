@@ -1,7 +1,17 @@
 body{
     font-family: segoe ui;
 }
+.header{
 
+    padding: 1%;
+}
+.home-button{
+    padding-top: 5px;
+    float: left;
+}
+.logout{
+  float: right;
+}
 .table-control{
     float: left;
     width: 100%;

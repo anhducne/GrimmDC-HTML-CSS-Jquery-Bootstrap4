@@ -14,7 +14,7 @@
   }
   
   .modal-content-2{
-    background-color: #000000;
+    background-color:#000000d1;
     margin: auto;
     padding: 20px;
     /* border: 1px solid #888; */
@@ -26,23 +26,24 @@
    height: 100%;
   }
 .modal-content-list-left{
-    width: 25%;
+    width: 33.333%;
     float: left;
     height: 100%;
 }
 .modal-content-list-center{
-    width: 25%;
+    width: 33.333%;
     float: left;
     height: 100%;
 }
 .modal-content-list-right{
-    width: 25%;
+    width: 33.333%;
     float: left;
     height: 100%;
 }
 .modal-content-list-img{
     width: 25%;
     float: left;
+    display: none;
 }
 .modal-content-list-img img{
     width: 100%;
